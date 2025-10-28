@@ -21,7 +21,7 @@
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -208,36 +208,48 @@
                         tabindex="0"></iframe>
                 </div>
                 <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
-                    <h3>Need a functional contact form?</h3>
-                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                    <form>
-                        <div class="row g-3">
+                    <form action="send_mail.php" method="POST" class="contact-form bg-white p-5 rounded-4 shadow-lg border border-light">
+                        <h3 class="mb-4 text-center fw-bold text-primary">Get in Touch</h3>
+                        <p class="text-center text-muted mb-4">We’d love to hear from you! Fill out the form below and we’ll get back to you soon.</p>
+
+                        <div class="row g-4">
+                            <!-- Name -->
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                    <label for="name"><i class="bi bi-person me-2"></i>Your Name</label>
                                 </div>
                             </div>
+
+                            <!-- Email -->
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                    <label for="email"><i class="bi bi-envelope me-2"></i>Your Email</label>
                                 </div>
                             </div>
+
+                            <!-- Subject -->
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                                    <label for="subject"><i class="bi bi-chat-dots me-2"></i>Subject</label>
                                 </div>
                             </div>
+
+                            <!-- Message -->
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 250px"></textarea>
-                                    <label for="message">Message</label>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 200px" required></textarea>
+                                    <label for="message"><i class="bi bi-pencil-square me-2"></i>Message</label>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-4" type="submit">Send Message</button>
+
+                            <!-- Submit Button -->
+                            <div class="col-12 text-center">
+                                <button class="btn btn-primary px-5 py-3 rounded-pill shadow-sm fw-semibold btn-animate" type="submit">
+                                    <i class="bi bi-send me-2"></i>Send Message
+                                </button>
                             </div>
                         </div>
                     </form>
@@ -288,9 +300,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="service.html">Our Services</a>
                     <a class="btn btn-link" href="">Terms & Condition</a>
                     <a class="btn btn-link" href="">Support</a>
                 </div>
