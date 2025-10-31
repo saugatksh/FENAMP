@@ -424,7 +424,7 @@
 .about-img::before,
 .about-img::after {
     position: absolute;
-    content: "";
+    content: none;
     width: 33%;
     height: 90px;
     background: var(--bs-white);
