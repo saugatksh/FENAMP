@@ -3,6 +3,30 @@
     --bs-tertiary: #797E88;
 }
 
+#team-grid .team-card {
+  transition: all 0.1s ease-in-out;
+}
+
+#team-grid .team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+#team-grid img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff; /* optional */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* optional */
+}
+
+.section-title {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 30px;
+}
+
 .back-to-top {
     position: fixed;
     display: none;
