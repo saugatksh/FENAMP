@@ -77,7 +77,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                       "Full Name: $fullName\n".
                       "Email: $email\n".
                       "Phone: $phone\n".
+                      "Gender: $gender\n".
+                      "Date of Birth: $dob\n".
+                      "District: $district\n".
                       "Address: $address";
+                      "Membership Type: $membershipType\n";
 
         $headers  = "From: $fullName <$email>\r\n";
         $headers .= "Reply-To: $email\r\n";
