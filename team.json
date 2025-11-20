@@ -1,134 +1,188 @@
-[
-    {
-        "name": "Mr. Ramraja Acharya",
-        "title": "President",
-        "email": "rracharya@fenamp.org",
-        "image": "img/ramraja-acharya.jpeg"
-    },
-    {
-        "name": "Mr. Ram Bahadur Rai",
-        "title": "Vice-President, Koshi Province",
-        "email": "ram@fenamp.org",
-        "image": "img/ram-bahadur-rai.jpeg"
-    },
-    {
-        "name": "Ms. Kabita Dahal",
-        "title": "Vice-President, Madhesh Province",
-        "email": "kabita@fenamp.org",
-        "image": "img/kabita-dahal.jpeg"
-    },
-    {
-        "name": "Mr. Chandra Shyam Dongol",
-        "title": "Vice-President, Bagmati Province",
-        "email": "chandra@fenamp.org",
-        "image": "img/chandra-shyam-dongol.jpeg"
-    },
-    {
-        "name": "Ms. Sushmita Thapa Magar",
-        "title": "Vice-President, Gandaki Province",
-        "email": "sushmita@fenamp.org",
-        "image": "img/sushmita-thapa-magar.jpeg"
-    },
-    {
-        "name": "Mr. Motilal Bhattarai",
-        "title": "Vice-President, Lumbini Province",
-        "email": "motilal@fenamp.org",
-        "image": "img/motilal-bhattarai.jpeg"
-    },
-    {
-        "name": "Ms. Gauri Khatri",
-        "title": "Vice-President, Karnali Province",
-        "email": "gauri@fenamp.org",
-        "image": "img/gauri-khatri.jpeg"
-    },
-    {
-        "name": "Dr. Tara Datta Paneru",
-        "title": "Vice-President, Sudurpaschchim Province",
-        "email": "tara@fenamp.org",
-        "image": "img/tata-datta.jpeg"
-    },
-    {
-        "name": "Mr. Balkrishna Acharya",
-        "title": "General Secretary",
-        "email": "balkrishna@fenamp.org",
-        "image": "img/balkrishna.jpeg"
-    },
-    {
-        "name": "Ms. Gita Sharma",
-        "title": "Treasurer",
-        "email": "gita@fenamp.org",
-        "image": "img/gita-sharma.jpeg"
-    },
-    {
-        "name": "Ms. Shobha Dhahal",
-        "title": "Secretary",
-        "email": "shobha@fenamp.org",
-        "image": "img/shobha-dahal.jpeg"
-    },
-    {
-        "name": "Mr. Raju Rai",
-        "title": "Central Committee Member",
-        "email": "rai.raju@fenamp.org",
-        "image": "img/Raju-rai.jpeg"
-    },
-    {
-        "name": "Dr. Sharada Poudel",
-        "title": "Central Committee Member",
-        "image": "img/sharada-poudel.jpeg"
-    },
-    {
-        "name": "Mr. Janak Bista",
-        "title": "Central Committee Member",
-        "image": "img/janak-bahadur-bista.jpeg"
-    },
-    {
-        "name": "Mr. Mahindra Prasad Singh",
-        "title": "Central Committee Member",
-        "image": "img/mahindra-prasad.jpeg"
-    },
-    {
-        "name": "Mr. Shibaji Mahato",
-        "title": "Central Committee Member",
-        "image": "img/shibaji-mahato.jpg"
-    },
-    {
-        "name": "Ms. Ganga Kumari Shrestha",
-        "title": "Central Committee Member",
-        "image": "img/ganga-kumari-shrestha.jpeg"
-    },
-    {
-        "name": "Mr. Chandra Bahadur Tamang",
-        "title": "Central Committee Member",
-        "image": "img/chandra-bahadur-tamang.jpeg"
-    },
-    {
-        "name": "Mr. Lil Bahadur Rana",
-        "title": "Central Committee Member",
-        "image": "img/lil-bahadur-rana.jpeg"
-    },
-    {
-        "name": "Mr. Gagan Bahadur Rana",
-        "title": "Central Committee Member",
-        "image": "img/gagan-bahadur-rana.jpeg"
-    },
-    {
-        "name": "Ms. Goma Taramu",
-        "title": "Central Committee Member",
-        "image": "img/goma-taramu.jpeg"
-    },
-    {
-        "name": "Mr. Narayan Prasad Poudel",
-        "title": "Central Committee Member",
-        "image": "img/narayan-prasad.jpeg"
-    },
-    {
-        "name": "Mr. Ramhari Giri",
-        "title": "Central Committee Member",
-        "image": "img/ram-hari-giri.jpeg"
-    },
-    {
-        "name": "Mr. Badri Shrestha",
-        "title": "Central Committee Member",
-        "image": "img/badri-shrestha.jpeg"
-    }
-]
+{
+    "centralCommittee": [
+        {
+            "name": "Mr. Ramraja Acharya",
+            "title": "President",
+            "email": "rracharya@fenamp.org",
+            "image": "img/ramraja-acharya.jpeg"
+        },
+        {
+            "name": "Mr. Ram Bahadur Rai",
+            "title": "Vice-President, Koshi Province",
+            "email": "ram@fenamp.org",
+            "image": "img/ram-bahadur-rai.jpeg"
+        },
+        {
+            "name": "Ms. Kabita Dahal",
+            "title": "Vice-President, Madhesh Province",
+            "email": "kabita@fenamp.org",
+            "image": "img/kabita-dahal.jpeg"
+        },
+        {
+            "name": "Mr. Chandra Shyam Dongol",
+            "title": "Vice-President, Bagmati Province",
+            "email": "chandra@fenamp.org",
+            "image": "img/chandra-shyam-dongol.jpeg"
+        },
+        {
+            "name": "Ms. Sushmita Thapa Magar",
+            "title": "Vice-President, Gandaki Province",
+            "email": "sushmita@fenamp.org",
+            "image": "img/sushmita-thapa-magar.jpeg"
+        },
+        {
+            "name": "Mr. Motilal Bhattarai",
+            "title": "Vice-President, Lumbini Province",
+            "email": "motilal@fenamp.org",
+            "image": "img/motilal-bhattarai.jpeg"
+        },
+        {
+            "name": "Ms. Gauri Khatri",
+            "title": "Vice-President, Karnali Province",
+            "email": "gauri@fenamp.org",
+            "image": "img/gauri-khatri.jpeg"
+        },
+        {
+            "name": "Dr. Tara Datta Paneru",
+            "title": "Vice-President, Sudurpaschchim Province",
+            "email": "tara@fenamp.org",
+            "image": "img/tata-datta.jpeg"
+        },
+        {
+            "name": "Mr. Balkrishna Acharya",
+            "title": "General Secretary",
+            "email": "balkrishna@fenamp.org",
+            "image": "img/balkrishna.jpeg"
+        },
+        {
+            "name": "Ms. Gita Sharma",
+            "title": "Treasurer",
+            "email": "gita@fenamp.org",
+            "image": "img/gita-sharma.jpeg"
+        },
+        {
+            "name": "Ms. Shobha Dhahal",
+            "title": "Secretary",
+            "email": "shobha@fenamp.org",
+            "image": "img/shobha-dahal.jpeg"
+        },
+        {
+            "name": "Mr. Raju Rai",
+            "title": "Central Committee Member",
+            "email": "rai.raju@fenamp.org",
+            "image": "img/Raju-rai.jpeg"
+        },
+        {
+            "name": "Dr. Sharada Poudel",
+            "title": "Central Committee Member",
+            "image": "img/sharada-poudel.jpeg"
+        },
+        {
+            "name": "Mr. Janak Bista",
+            "title": "Central Committee Member",
+            "image": "img/janak-bahadur-bista.jpeg"
+        },
+        {
+            "name": "Mr. Mahindra Prasad Singh",
+            "title": "Central Committee Member",
+            "image": "img/mahindra-prasad.jpeg"
+        },
+        {
+            "name": "Mr. Shibaji Mahato",
+            "title": "Central Committee Member",
+            "image": "img/shibaji-mahato.jpg"
+        },
+        {
+            "name": "Ms. Ganga Kumari Shrestha",
+            "title": "Central Committee Member",
+            "image": "img/ganga-kumari-shrestha.jpeg"
+        },
+        {
+            "name": "Mr. Chandra Bahadur Tamang",
+            "title": "Central Committee Member",
+            "image": "img/chandra-bahadur-tamang.jpeg"
+        },
+        {
+            "name": "Mr. Lil Bahadur Rana",
+            "title": "Central Committee Member",
+            "image": "img/lil-bahadur-rana.jpeg"
+        },
+        {
+            "name": "Mr. Gagan Bahadur Rana",
+            "title": "Central Committee Member",
+            "image": "img/gagan-bahadur-rana.jpeg"
+        },
+        {
+            "name": "Ms. Goma Taramu",
+            "title": "Central Committee Member",
+            "image": "img/goma-taramu.jpeg"
+        },
+        {
+            "name": "Mr. Narayan Prasad Poudel",
+            "title": "Central Committee Member",
+            "image": "img/narayan-prasad.jpeg"
+        },
+        {
+            "name": "Mr. Ramhari Giri",
+            "title": "Central Committee Member",
+            "image": "img/ram-hari-giri.jpeg"
+        },
+        {
+            "name": "Mr. Badri Shrestha",
+            "title": "Central Committee Member",
+            "image": "img/badri-shrestha.jpeg"
+        }
+    ],
+
+    "provinceCommittee": [
+        {
+            "name": "Mr. Krishna Prasad Dhakal",
+            "title": "Province Committee Member",
+            "image": "img/default-male.jpg"
+        },
+        {
+            "name": "Ms. Laxmi Kumari Sharma",
+            "title": "Province Committee Member",
+            "image": "img/default-female.jpg"
+        },
+        {
+            "name": "Mr. Tej Bahadur Karki",
+            "title": "Province Committee Member",
+            "image": "img/default-male.jpg"
+        }
+    ],
+    "districtCommittee": [
+        {
+            "name": "Mr. Hari Prasad Adhikari",
+            "title": "District Committee Member",
+            "image": "img/default-male.jpg"
+        },
+        {
+            "name": "Ms. Radha Devi Adhikari",
+            "title": "District Committee Member",
+            "image": "img/default-female.jpg"
+        },
+        {
+            "name": "Mr. Mohan Prasad Dhakal",
+            "title": "District Committee Member",
+            "image": "img/default-male.jpg"
+        }
+    ],
+    "municipalCommittee": [
+        {
+            "name": "Mr. Suman Kumar Shrestha",
+            "title": "Municipal Committee Member",
+            "image": "img/default-male.jpg"
+        },
+        {
+            "name": "Ms. Anju Devi Thapa",
+            "title": "Municipal Committee Member",
+            "image": "img/default-female.jpg"
+        },
+        {
+            "name": "Mr. Bikram Bahadur Thapa",
+            "title": "Municipal Committee Member",
+            "image": "img/default-male.jpg"
+        }
+    ]
+}

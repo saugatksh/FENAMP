@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "काठमाडौं उत्पादन तथा बजार संरक्षण संघ",
+    "name": "Kathmandu Production & Market Protection Association",
     "members": [
       {
         "name": "राम प्रसाद श्रेष्ठ",
@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "name": "दाङ उत्पादन तथा बजार संरक्षण संघ",
+    "name": "Dang Production & Market Protection Association",
     "members": [
       {
         "name": "गोपाल भण्डारी",
@@ -29,5 +29,4 @@
       }
     ]
   }
-    
 ]

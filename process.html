@@ -1,0 +1,182 @@
+Got it — you want:
+
+1. Separate JSON sections for:
+
+Province Committee
+
+District Committee
+
+Municipal Committee
+
+**2. Each HTML page should load ONLY the relevant section from the SAME team.json.
+
+Below is exactly that.
+
+✅ 1. Updated team.json (with separate groups)
+
+You can reorganize your data like this:
+
+{
+    "provinceCommittee": [
+        {
+            "name": "Mr. Ramraja Acharya",
+            "title": "President",
+            "email": "rracharya@fenamp.org",
+            "image": "img/ramraja-acharya.jpeg"
+        },
+        {
+            "name": "Mr. Ram Bahadur Rai",
+            "title": "Vice-President, Koshi Province",
+            "email": "ram@fenamp.org",
+            "image": "img/ram-bahadur-rai.jpeg"
+        },
+        {
+            "name": "Ms. Kabita Dahal",
+            "title": "Vice-President, Madhesh Province",
+            "email": "kabita@fenamp.org",
+            "image": "img/kabita-dahal.jpeg"
+        }
+        // Add all province committee members here
+    ],
+
+    "districtCommittee": [
+        {
+            "name": "Mr. Raju Rai",
+            "title": "District Committee Member",
+            "email": "rai.raju@fenamp.org",
+            "image": "img/Raju-rai.jpeg"
+        },
+        {
+            "name": "Ms. Goma Taramu",
+            "title": "District Committee Member",
+            "image": "img/goma-taramu.jpeg"
+        }
+        // Add more members here
+    ],
+
+    "municipalCommittee": [
+        {
+            "name": "Mr. Balkrishna Acharya",
+            "title": "Municipal Committee Coordinator",
+            "email": "balkrishna@fenamp.org",
+            "image": "img/balkrishna.jpeg"
+        },
+        {
+            "name": "Ms. Gita Sharma",
+            "title": "Municipal Treasurer",
+            "email": "gita@fenamp.org",
+            "image": "img/gita-sharma.jpeg"
+        }
+        // Add more municipal committee members here
+    ]
+}
+
+✔ You are free to move your existing data under the correct sections.
+✔ This structure allows each page to load ONLY what it needs.
+✅ 2. Common JavaScript file (committee.js)
+
+Place this inside js/committee.js:
+
+async function loadCommittee(sectionName) {
+    try {
+        const response = await fetch("team.json");
+        const data = await response.json();
+
+        const members = data[sectionName];
+        const container = document.getElementById("committee-container");
+
+        if (!members) {
+            container.innerHTML = "<p>No data found for this committee.</p>";
+            return;
+        }
+
+        members.forEach(member => {
+            const div = document.createElement("div");
+            div.classList.add("member-card");
+
+            div.innerHTML = `
+                <img src="${member.image}" alt="${member.name}" class="member-img">
+                <h3>${member.name}</h3>
+                <p>${member.title}</p>
+                ${member.email ? `<a href="mailto:${member.email}">${member.email}</a>` : ""}
+            `;
+
+            container.appendChild(div);
+        });
+
+    } catch (error) {
+        console.error("Error loading committee:", error);
+    }
+}
+
+✅ 3. province-committee.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Province Committee</title>
+</head>
+<body>
+
+<h2>Province Committee</h2>
+
+<div id="committee-container" class="committee-grid"></div>
+
+<script src="js/committee.js"></script>
+<script>
+    loadCommittee("provinceCommittee");
+</script>
+
+</body>
+</html>
+
+✅ 4. district-committee.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>District Committee</title>
+</head>
+<body>
+
+<h2>District Committee</h2>
+
+<div id="committee-container" class="committee-grid"></div>
+
+<script src="js/committee.js"></script>
+<script>
+    loadCommittee("districtCommittee");
+</script>
+
+</body>
+</html>
+
+✅ 5. municipal-committee.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Municipal Committee</title>
+</head>
+<body>
+
+<h2>Municipal Committee</h2>
+
+<div id="committee-container" class="committee-grid"></div>
+
+<script src="js/committee.js"></script>
+<script>
+    loadCommittee("municipalCommittee");
+</script>
+
+</body>
+</html>
+
+🎉 Now each page loads ONLY the data it needs!
+
+Province page → provinceCommittee
+
+District page → districtCommittee
+
+Municipal page → municipalCommittee
+
+You no longer need complex filters — just load the correct JSON section.
+
+If you want, I can help you restructure your full original list into the correct JSON groups.

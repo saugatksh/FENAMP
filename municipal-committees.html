@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="ne">
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <title>District Committee Details</title>
+    <title>Team</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -17,11 +18,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -32,47 +32,14 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8f9fa;
-        }
-
-        .card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: none;
-            border-radius: 0.75rem;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
-        }
-
-        .card-img-top {
-            height: 250px;
-            object-fit: cover;
-            border-top-left-radius: 0.75rem;
-            border-top-right-radius: 0.75rem;
-        }
-
-        .card-title {
-            font-weight: 600;
-        }
-
-        #district-name {
-            font-weight: 700;
-        }
-    </style>
 </head>
+
 <body>
-        <!-- Spinner Start -->
+    <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
-
 
     <!-- Topbar Start -->
     <div class="container-fluid bg-secondary top-bar wow fadeIn" data-wow-delay="0.1s">
@@ -137,22 +104,27 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav me-auto">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="team.html" class="nav-item nav-link">Team</a>
-                        <a href="districtcommittees.html" class="nav-item nav-link">District Committees</a>
-                        <!-- <a href="donation.html" class="nav-item nav-link">Donation</a> -->
-                        <!-- <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
                             <div class="dropdown-menu bg-light m-0">
-                                <a href="event.html" class="dropdown-item">Event</a>
-                                <a href="feature.html" class="dropdown-item">Feature</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
+                                <a href="about.html" class="dropdown-item">About</a>
+                                <a href="departments.html" class="dropdown-item">Departments</a>
+                                <!-- <a href="districtcommittees.html" class="dropdown-item">District Committee</a>
+                                <a href="municipalcommittees.html" class="dropdown-item">Municipal Committee</a> -->
                             </div>
-                        </div> -->
+                        </div>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Members</a>
+                            <div class="dropdown-menu bg-light m-0">
+                                <a href="central-committee.html" class="dropdown-item">Central Committee</a>
+                                <a href="province-committee.html" class="dropdown-item">Province Committee</a>
+                                <a href="district-committees.html" class="dropdown-item">District Committee</a>
+                                <a href="municipal-committees.html" class="dropdown-item">Municipal Committee</a>
+                            </div>
+                        </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <!-- <a href="membership-form.html" class="nav-item nav-link">Membership Form</a> -->
                     </div>
                     <div class="d-none d-lg-flex ms-auto">
                         <a class="btn btn-square btn-dark ms-2" href="https://www.tiktok.com/@fenamp?_t=ZS-90ycUSA20Z8&_r=1"><i class="fab fa-tiktok"></i></a>
@@ -165,91 +137,24 @@
     </div>
     <!-- Navbar End -->
 
-    <div class="container py-5">
-        <div class="bg-white p-4 rounded shadow-sm d-flex align-items-center mb-5">
-            <!-- Back Button -->
-            <a href="districtcommittees.html" class="btn btn-outline-primary me-3">
-                &larr; Back
-            </a>
-            <!-- District Name -->
-            <h2 id="district-name" class="text-primary mb-0"></h2>
+    <!-- Team Members Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <p class="section-title bg-white text-center text-primary px-3">Our Team</p>
+                <h1 class="display-6">Meet Our Municipal Committee Members</h1>
+            </div>
+            <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2" id="team-grid"> -->
+                <!-- Team members will be injected here -->
+                <div id="committee-container" class="committee-grid"></div>
+            </div>
         </div>
-
-        <div id="members" class="row g-4"></div>
     </div>
 
-    <script>
-        async function loadDistrictData() {
-            const params = new URLSearchParams(window.location.search);
-            const districtName = decodeURIComponent(params.get('district'));
-
-            const districtNameElement = document.getElementById('district-name');
-            const membersDiv = document.getElementById('members');
-
-            if (!districtName) {
-                districtNameElement.textContent = 'No district selected.';
-                return;
-            }
-
-            try {
-                const res = await fetch('committees.json');
-                const data = await res.json();
-
-                const district = data.find(d => d.name === districtName);
-
-                if (!district) {
-                    districtNameElement.textContent = districtName;
-
-                    membersDiv.innerHTML = `
-                        <div class="col-12">
-                            <div class="alert alert-warning text-center" role="alert">
-                                <h5 class="mb-2"><i class="bi bi-exclamation-circle"></i> Details Pending..............</h5>    
-                                We are working to update the committee details for this district. Please check back later.     
-                            </div>
-                        </div>
-                    `;
-                    return;
-                }
-
-                districtNameElement.textContent = district.name;
-                membersDiv.innerHTML = '';
-
-                district.members.forEach(member => {
-                    const card = `
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 shadow-sm">
-                                <img src="${member.photo}" class="card-img-top" alt="${member.name}">
-                                <div class="card-body">
-                                    <h5 class="card-title">${member.name}</h5>
-                                    <h6 class="card-subtitle text-muted mb-2">
-                                        <i class="bi bi-person-badge"></i> ${member.position}
-                                    </h6>
-                                    <p class="card-text small">${member.bio}</p>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                    membersDiv.innerHTML += card;
-                });
-            } catch (err) {
-                console.error('Error loading data:', err);
-                districtNameElement.textContent = 'Error loading data.';
-                membersDiv.innerHTML = `
-                    <div class="col-12">
-                        <div class="alert alert-danger text-center" role="alert">
-                            <i class="bi bi-x-circle"></i> Unable to load district data. Please try again later.
-                        </div>
-                    </div>
-                `;
-            }
-        }
-
-        loadDistrictData();
-    </script>
+    <!-- Team Members End -->
 
 
-
-<!-- Footer Start -->
+    <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5 py-2">
@@ -325,10 +230,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -341,7 +244,9 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/committee.js"></script>
 
+    <!-- Team JSON Loader -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Get the current page filename (e.g., "about.html")
@@ -367,6 +272,57 @@
                 }
             });
         });
+
+        loadCommittee("municipalCommittee");
+
+        // fetch('team.json')
+        //     .then(response => response.json())
+        //     .then(data => {
+        //         const container = document.getElementById('team-grid');
+
+        //         if (data.length === 0) return;
+
+        //         // 1️⃣ Featured member (first member)
+        //         const first = data[0];
+        //         const emailHTMLFirst = first.email ? `<br><small>Email: <a href="mailto:${first.email}">${first.email}</a></small>` : '';
+        //         const featuredHTML = `
+        //             <div class="row justify-content-center mb-5">
+        //                 <div class="col-12 col-sm-8 col-md-6 col-lg-4 wow fadeIn">
+        //                     <div class="team-item d-flex h-100 p-4 text-center">
+        //                         <div class="team-detail">
+        //                             <img class="img-fluid mb-4" src="${first.image}" alt="${first.name}">
+        //                             <h3>${first.name}</h3>
+        //                             <span>${first.title}</span>
+        //                             ${emailHTMLFirst}
+        //                         </div>
+        //                     </div>
+        //                 </div>
+        //             </div>
+        //         `;
+        //         container.insertAdjacentHTML('beforebegin', featuredHTML);
+
+        //         // 2️⃣ Remaining members in the grid
+        //         data.slice(1).forEach((member, index) => {
+        //             const delay = 0.1 + index * 0.1;
+        //             const emailHTML = member.email ? `<br><small>Email: <a href="mailto:${member.email}">${member.email}</a></small>` : '';
+        //             const memberHTML = `
+        //                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="${delay}s">
+        //                     <div class="team-item d-flex h-100 p-4">
+        //                         <div class="team-detail pe-4">
+        //                             <img class="img-fluid mb-4" src="${member.image}" alt="${member.name}">
+        //                             <h3>${member.name}</h3>
+        //                             <span>${member.title}</span>
+        //                             ${emailHTML}
+        //                         </div>
+        //                     </div>
+        //                 </div>
+        //             `;
+        //             container.insertAdjacentHTML('beforeend', memberHTML);
+        //         });
+        //     })
+        // .catch(error => console.error('Error loading team members:', error));
     </script>
+
 </body>
+
 </html>

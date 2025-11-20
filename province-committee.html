@@ -104,15 +104,31 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav me-auto">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                            <div class="dropdown-menu bg-light m-0">
+                                <a href="about.html" class="dropdown-item">About</a>
+                                <a href="departments.html" class="dropdown-item">Departments</a>
+                                <!-- <a href="districtcommittees.html" class="dropdown-item">District Committee</a>
+                                <a href="municipalcommittees.html" class="dropdown-item">Municipal Committee</a> -->
+                            </div>
+                        </div>
                         <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="team.html" class="nav-item nav-link">Team</a>
-                        <a href="districtcommittees.html" class="nav-item nav-link">District Committees</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Members</a>
+                            <div class="dropdown-menu bg-light m-0">
+                                <a href="central-committee.html" class="dropdown-item">Central Committee</a>
+                                <a href="province-committee.html" class="dropdown-item">Province Committee</a>
+                                <a href="district-committees.html" class="dropdown-item">District Committee</a>
+                                <a href="municipal-committees.html" class="dropdown-item">Municipal Committee</a>
+                            </div>
+                        </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <!-- <a href="membership-form.html" class="nav-item nav-link">Membership Form</a> -->
                     </div>
                     <div class="d-none d-lg-flex ms-auto">
                         <a class="btn btn-square btn-dark ms-2" href="https://www.tiktok.com/@fenamp?_t=ZS-90ycUSA20Z8&_r=1"><i class="fab fa-tiktok"></i></a>
-                        <a class="btn btn-square btn-dark ms-2" href="https://www.facebook.com/profile.php?id=61576482777080"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-dark ms-2" href="https://www.facebook.com/profile.php?id=61576482777080&mibextid=wwXIfr&rdid=s372BJyxWfPXyL28&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19hdANXmiE%2F%3Fmibextid%3DwwXIfr#"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-square btn-dark ms-2" href=""><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
@@ -126,13 +142,15 @@
         <div class="container">
             <div class="text-center mx-auto mb-5" style="max-width: 700px;">
                 <p class="section-title bg-white text-center text-primary px-3">Our Team</p>
-                <h1 class="display-6">Meet Our Central Committee Members</h1>
+                <h1 class="display-6">Meet Our Province Committee Members</h1>
             </div>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2" id="team-grid">
+            <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2" id="team-grid"> -->
                 <!-- Team members will be injected here -->
+                <div id="committee-container" class="committee-grid"></div>
             </div>
         </div>
     </div>
+
     <!-- Team Members End -->
 
 
@@ -226,6 +244,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/committee.js"></script>
 
     <!-- Team JSON Loader -->
     <script>
@@ -254,52 +273,54 @@
             });
         });
 
-        fetch('team.json')
-            .then(response => response.json())
-            .then(data => {
-                const container = document.getElementById('team-grid');
+        loadCommittee("provinceCommittee");
 
-                if (data.length === 0) return;
+        // fetch('team.json')
+        //     .then(response => response.json())
+        //     .then(data => {
+        //         const container = document.getElementById('team-grid');
 
-                // 1️⃣ Featured member (first member)
-                const first = data[0];
-                const emailHTMLFirst = first.email ? `<br><small>Email: <a href="mailto:${first.email}">${first.email}</a></small>` : '';
-                const featuredHTML = `
-                    <div class="row justify-content-center mb-5">
-                        <div class="col-12 col-sm-8 col-md-6 col-lg-4 wow fadeIn">
-                            <div class="team-item d-flex h-100 p-4 text-center">
-                                <div class="team-detail">
-                                    <img class="img-fluid mb-4" src="${first.image}" alt="${first.name}">
-                                    <h3>${first.name}</h3>
-                                    <span>${first.title}</span>
-                                    ${emailHTMLFirst}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                container.insertAdjacentHTML('beforebegin', featuredHTML);
+        //         if (data.length === 0) return;
 
-                // 2️⃣ Remaining members in the grid
-                data.slice(1).forEach((member, index) => {
-                    const delay = 0.1 + index * 0.1;
-                    const emailHTML = member.email ? `<br><small>Email: <a href="mailto:${member.email}">${member.email}</a></small>` : '';
-                    const memberHTML = `
-                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="${delay}s">
-                            <div class="team-item d-flex h-100 p-4">
-                                <div class="team-detail pe-4">
-                                    <img class="img-fluid mb-4" src="${member.image}" alt="${member.name}">
-                                    <h3>${member.name}</h3>
-                                    <span>${member.title}</span>
-                                    ${emailHTML}
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                    container.insertAdjacentHTML('beforeend', memberHTML);
-                });
-            })
-        .catch(error => console.error('Error loading team members:', error));
+        //         // 1️⃣ Featured member (first member)
+        //         const first = data[0];
+        //         const emailHTMLFirst = first.email ? `<br><small>Email: <a href="mailto:${first.email}">${first.email}</a></small>` : '';
+        //         const featuredHTML = `
+        //             <div class="row justify-content-center mb-5">
+        //                 <div class="col-12 col-sm-8 col-md-6 col-lg-4 wow fadeIn">
+        //                     <div class="team-item d-flex h-100 p-4 text-center">
+        //                         <div class="team-detail">
+        //                             <img class="img-fluid mb-4" src="${first.image}" alt="${first.name}">
+        //                             <h3>${first.name}</h3>
+        //                             <span>${first.title}</span>
+        //                             ${emailHTMLFirst}
+        //                         </div>
+        //                     </div>
+        //                 </div>
+        //             </div>
+        //         `;
+        //         container.insertAdjacentHTML('beforebegin', featuredHTML);
+
+        //         // 2️⃣ Remaining members in the grid
+        //         data.slice(1).forEach((member, index) => {
+        //             const delay = 0.1 + index * 0.1;
+        //             const emailHTML = member.email ? `<br><small>Email: <a href="mailto:${member.email}">${member.email}</a></small>` : '';
+        //             const memberHTML = `
+        //                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="${delay}s">
+        //                     <div class="team-item d-flex h-100 p-4">
+        //                         <div class="team-detail pe-4">
+        //                             <img class="img-fluid mb-4" src="${member.image}" alt="${member.name}">
+        //                             <h3>${member.name}</h3>
+        //                             <span>${member.title}</span>
+        //                             ${emailHTML}
+        //                         </div>
+        //                     </div>
+        //                 </div>
+        //             `;
+        //             container.insertAdjacentHTML('beforeend', memberHTML);
+        //         });
+        //     })
+        // .catch(error => console.error('Error loading team members:', error));
     </script>
 
 </body>
