@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Team</title>
+    <title>Province Committees</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -40,6 +40,7 @@
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
+
 
     <!-- Topbar Start -->
     <div class="container-fluid bg-secondary top-bar wow fadeIn" data-wow-delay="0.1s">
@@ -93,6 +94,7 @@
     </div>
     <!-- Topbar End -->
 
+
     <!-- Navbar Start -->
     <div class="container-fluid bg-secondary px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="nav-bar">
@@ -137,24 +139,31 @@
     </div>
     <!-- Navbar End -->
 
-    <!-- Team Members Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
-                <p class="section-title bg-white text-center text-primary px-3">Our Team</p>
-                <h1 class="display-6">Meet Our District Committee Members</h1>
-            </div>
-            <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2" id="team-grid"> -->
-                <!-- Team members will be injected here -->
-                <div id="committee-container" class="committee-grid"></div>
-            </div>
+    <!-- Committees Grid Start -->
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="text-primary">District Committees</h2>
+            <p class="text-muted">Browse all associations</p>
+        </div>
+
+        <div class="text-center mb-4">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1796977.8069619825!2d84.13015055000001!3d28.397455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995e8c77d2e68cf%3A0x34a29abcd0cc86de!2sNepal!5e0!3m2!1sen!2snp!4v1761044969708!5m2!1sen!2snp" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <div class="row" id="associationsGrid">
+            <!-- JS injects all associations here -->
         </div>
     </div>
+    <!-- Committees Grid End -->
 
-    <!-- Team Members End -->
-
-
-    <!-- Footer Start -->
+<!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5 py-2">
@@ -230,8 +239,10 @@
     </div>
     <!-- Footer End -->
 
+
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -244,9 +255,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="js/committee.js"></script>
 
-    <!-- Team JSON Loader -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Get the current page filename (e.g., "about.html")
@@ -272,57 +281,64 @@
                 }
             });
         });
-
-        loadCommittee("districtCommittee");
-
-        // fetch('team.json')
-        //     .then(response => response.json())
-        //     .then(data => {
-        //         const container = document.getElementById('team-grid');
-
-        //         if (data.length === 0) return;
-
-        //         // 1️⃣ Featured member (first member)
-        //         const first = data[0];
-        //         const emailHTMLFirst = first.email ? `<br><small>Email: <a href="mailto:${first.email}">${first.email}</a></small>` : '';
-        //         const featuredHTML = `
-        //             <div class="row justify-content-center mb-5">
-        //                 <div class="col-12 col-sm-8 col-md-6 col-lg-4 wow fadeIn">
-        //                     <div class="team-item d-flex h-100 p-4 text-center">
-        //                         <div class="team-detail">
-        //                             <img class="img-fluid mb-4" src="${first.image}" alt="${first.name}">
-        //                             <h3>${first.name}</h3>
-        //                             <span>${first.title}</span>
-        //                             ${emailHTMLFirst}
-        //                         </div>
-        //                     </div>
-        //                 </div>
-        //             </div>
-        //         `;
-        //         container.insertAdjacentHTML('beforebegin', featuredHTML);
-
-        //         // 2️⃣ Remaining members in the grid
-        //         data.slice(1).forEach((member, index) => {
-        //             const delay = 0.1 + index * 0.1;
-        //             const emailHTML = member.email ? `<br><small>Email: <a href="mailto:${member.email}">${member.email}</a></small>` : '';
-        //             const memberHTML = `
-        //                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="${delay}s">
-        //                     <div class="team-item d-flex h-100 p-4">
-        //                         <div class="team-detail pe-4">
-        //                             <img class="img-fluid mb-4" src="${member.image}" alt="${member.name}">
-        //                             <h3>${member.name}</h3>
-        //                             <span>${member.title}</span>
-        //                             ${emailHTML}
-        //                         </div>
-        //                     </div>
-        //                 </div>
-        //             `;
-        //             container.insertAdjacentHTML('beforeend', memberHTML);
-        //         });
-        //     })
-        // .catch(error => console.error('Error loading team members:', error));
     </script>
+    
+    <script>
+    const provinces = {
+        "Koshi Province": [
+            "Pachthar Production & Market Protection Association",
+            "Taplejung Production & Market Protection Association",
+            "Udayapur Production & Market Protection Association",
+            "Siraha Production & Market Protection Association",
+            "Mahotari Production & Market Protection Association"
+        ],
+        "Madhesh Province": [
+            "Siraha Production & Market Protection Association",
+            "Mahotari Production & Market Protection Association"
+        ],
+        "Bagmati Province": [
+            "Kathmandu Production & Market Protection Association",
+            "Sindhuli Production & Market Protection Association"
+        ],
+        "Gandaki Province": [],
+        "Lumbini Province": [
+            "Dang Production & Market Protection Association",
+            "Rupendehi Production & Market Protection Association",
+            "Kapilbastu Production & Market Protection Association",
+            "Rolpa Production & Market Protection Association",
+            "Rukum (East) Production & Market Protection Association",
+            "Rukum (West) Production & Market Protection Association",
+            "Nawalparasi (West) Production & Market Protection Association",
+            "Nawalparasi (East) Production & Market Protection Association",
+            "Banke Production & Market Protection Association"
+        ],
+        "Karnali Province": [
+            "Surkhet Production & Market Protection Association",
+            "Kalikot Production & Market Protection Association",
+            "Mugu Production & Market Protection Association"
+        ],
+        "Sudurpaschim Province": [
+            "Kailali Production & Market Protection Association",
+            "Kanchanpur Production & Market Protection Association"
+        ],
+    };
 
+    // Flatten all associations into a single array
+    const allAssociations = Object.values(provinces).flat();
+
+    const gridContainer = document.getElementById("associationsGrid");
+    gridContainer.innerHTML = allAssociations.map(assoc => `
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h6 class="card-title">
+                        <i class="fa fa-building text-primary me-2"></i>${assoc}
+                    </h6>
+                    <a href="districtdetail.html?district=${encodeURIComponent(assoc)}" class="btn btn-sm btn-primary mt-2 align-self-center">View Details</a>
+                </div>
+            </div>
+        </div>
+    `).join("");
+    </script>
 </body>
-
 </html>
