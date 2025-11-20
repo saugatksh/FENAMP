@@ -7,13 +7,13 @@
         "name": "राम प्रसाद श्रेष्ठ",
         "position": "अध्यक्ष",
         "bio": "२० वर्षको अनुभव भएका सामाजिक अभियन्ता।",
-        "photo": "img/team-1.jpg"
+        "photo": "img/default-male.jpg"
       },
       {
         "name": "सीता थापा",
         "position": "सचिव",
         "bio": "स्थानिय बजार विकासमा योगदान।",
-        "photo": "img/testimonial-2.jpg"
+        "photo": "img/default-female.jpg"
       }
     ]
   },
@@ -25,7 +25,7 @@
         "name": "गोपाल भण्डारी",
         "position": "अध्यक्ष",
         "bio": "कृषि क्षेत्रको अनुभवी व्यक्तित्व।",
-        "photo": "img/testimonial-1.jpg"
+        "photo": "img/default-male.jpg"
       }
     ]
   }
