@@ -21,6 +21,22 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 } */
 
+.dept-line {
+    width: 60%;
+    margin: 10px auto;
+    border: 1px solid #000; /* Adjust color if needed */
+}
+
+.hod-img {
+    width: 120px;        /* Adjust size as you want */
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;   /* Makes it circular */
+    border: 3px solid #007bff; /* Optional: colored border */
+    margin-top: 10px;
+}
+
+
 /* Compact, stylish card for associations */
 #associationsGrid .card {
     border-radius: 12px;
