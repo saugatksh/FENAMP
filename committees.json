@@ -28,5 +28,65 @@
         "photo": "img/default-male.jpg"
       }
     ]
+  },
+  {
+    "id": 3,
+    "name": "National Production & Market Protection Association - Kailali District",
+    "members": [
+      {
+        "name": "गोरख बहादुर रावत",
+        "position": "अध्यक्ष",
+        "bio": "कृषि क्षेत्रको अनुभवी व्यक्तित्व।",
+        "photo": "img/Gorakha-bahadur-raut.jpeg"
+      },
+      {
+        "name": "सुनिलकुमार मिश्र",
+        "position": "उपाध्यक्ष",
+        "bio": "कृषि क्षेत्रको अनुभवी व्यक्तित्व।",
+        "photo": "img/sunil-kumar-mishra.jpeg"
+      },
+      {
+        "name": "तारा देबी शाह",
+        "position": "कोषाध्यक्ष",
+        "bio": "कृषि क्षेत्रको अनुभवी व्यक्तित्व।",
+        "photo": "img/tara-devi-shah.jpeg"
+      },
+      {
+        "name": "तारा चौधरी",
+        "position": "सचिब",
+        "bio": "कृषि क्षेत्रको अनुभवी व्यक्तित्व।",
+        "photo": "img/tara-chaudhary.jpeg"
+      },
+      {
+        "name": "कालुराम चौधरी",
+        "position": "सदस्य",
+        "bio": "कृषि क्षेत्रको अनुभवी व्यक्तित्व।",
+        "photo": "img/kaluram-chaudhary.jpeg"
+      },
+      {
+        "name": "जय बहादुर खड्का",
+        "position": "सदस्य",
+        "bio": "कृषि क्षेत्रको अनुभवी व्यक्तित्व।",
+        "photo": "img/jaya-bahadur-khadka.jpeg"
+      },
+      {
+        "name": "डण्डीराज भट्ट",
+        "position": "सदस्य",
+        "bio": "कृषि क्षेत्रको अनुभवी व्यक्तित्व।",
+        "photo": "img/dandiraj-bhatta.jpeg"
+      },
+      {
+        "name": "डल्ले रोकाया",
+        "position": "सदस्य",
+        "bio": "कृषि क्षेत्रको अनुभवी व्यक्तित्व।",
+        "photo": "img/dalle-rokkaya.jpeg"
+      },
+      {
+        "name": "श्रीकुमरी चौधरी",
+        "position": "सदस्य",
+        "bio": "कृषि क्षेत्रको अनुभवी व्यक्तित्व।",
+        "photo": "img/default-female.jpg"
+      }
+    ]
   }
 ]
