@@ -232,9 +232,9 @@
                 districtNameElement.textContent = district.name;
                 membersDiv.innerHTML = '';
 
-                district.members.forEach(member => {
+                district.members.forEach((member, index) => {
                     const card = `
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="${index * 0.1}s">
                             <div class="card team-card h-100 shadow-sm">
                                 <div class="card-img-wrapper">
                                     <img src="${member.photo}" class="card-img-top team-photo" alt="${member.name}">
@@ -251,6 +251,8 @@
                     `;
                     membersDiv.innerHTML += card;
                 });
+                // Initialize WOW.js for new elements
+                new WOW().init();
             } catch (err) {
                 console.error('Error loading data:', err);
                 districtNameElement.textContent = 'Error loading data.';

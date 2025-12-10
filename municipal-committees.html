@@ -123,6 +123,7 @@
                                 <a href="municipal-committees.html" class="dropdown-item">Municipal Committee</a>
                             </div>
                         </div>
+                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                         <!-- <a href="membership-form.html" class="nav-item nav-link">Membership Form</a> -->
                     </div>
@@ -190,27 +191,12 @@
                     <h6 class="text-light">Closed</h6>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Gallery</h4>
-                    <div class="row g-2">
-                        <div class="col-4">
-                            <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid w-100" src="img/gallery-2.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid w-100" src="img/gallery-5.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid w-100" src="img/gallery-6.jpg" alt="">
-                        </div>
-                    </div>
+                    <h4 class="text-light mb-4">Location</h4>
+                    <iframe class="w-100"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220.73412474321754!2d85.30299296044477!3d27.72512776997267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19005539ef31%3A0x59f4a6b8f857dc14!2sHercules%20Aviation!5e0!3m2!1sen!2snp!4v1761042048021!5m2!1sen!2snp"
+                        frameborder="0" style="height: 230px; border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0">
+                    </iframe>
                 </div>
             </div>
             <div class="copyright pt-3">
@@ -274,53 +260,6 @@
         });
 
         loadCommittee("municipalCommittee");
-
-        // fetch('team.json')
-        //     .then(response => response.json())
-        //     .then(data => {
-        //         const container = document.getElementById('team-grid');
-
-        //         if (data.length === 0) return;
-
-        //         // 1️⃣ Featured member (first member)
-        //         const first = data[0];
-        //         const emailHTMLFirst = first.email ? `<br><small>Email: <a href="mailto:${first.email}">${first.email}</a></small>` : '';
-        //         const featuredHTML = `
-        //             <div class="row justify-content-center mb-5">
-        //                 <div class="col-12 col-sm-8 col-md-6 col-lg-4 wow fadeIn">
-        //                     <div class="team-item d-flex h-100 p-4 text-center">
-        //                         <div class="team-detail">
-        //                             <img class="img-fluid mb-4" src="${first.image}" alt="${first.name}">
-        //                             <h3>${first.name}</h3>
-        //                             <span>${first.title}</span>
-        //                             ${emailHTMLFirst}
-        //                         </div>
-        //                     </div>
-        //                 </div>
-        //             </div>
-        //         `;
-        //         container.insertAdjacentHTML('beforebegin', featuredHTML);
-
-        //         // 2️⃣ Remaining members in the grid
-        //         data.slice(1).forEach((member, index) => {
-        //             const delay = 0.1 + index * 0.1;
-        //             const emailHTML = member.email ? `<br><small>Email: <a href="mailto:${member.email}">${member.email}</a></small>` : '';
-        //             const memberHTML = `
-        //                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="${delay}s">
-        //                     <div class="team-item d-flex h-100 p-4">
-        //                         <div class="team-detail pe-4">
-        //                             <img class="img-fluid mb-4" src="${member.image}" alt="${member.name}">
-        //                             <h3>${member.name}</h3>
-        //                             <span>${member.title}</span>
-        //                             ${emailHTML}
-        //                         </div>
-        //                     </div>
-        //                 </div>
-        //             `;
-        //             container.insertAdjacentHTML('beforeend', memberHTML);
-        //         });
-        //     })
-        // .catch(error => console.error('Error loading team members:', error));
     </script>
 
 </body>

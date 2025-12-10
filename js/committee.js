@@ -21,7 +21,7 @@ async function loadCommittee(sectionName) {
         const emailHTMLPresident = president.email ? `<br><small>Email: <a href="mailto:${president.email}">${president.email}</a></small>` : '';
         const featuredHTML = `
             <div class="row justify-content-center mb-5">
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4 wow fadeIn">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="team-item d-flex h-100 p-4 text-center">
                         <div class="team-detail">
                             <img class="img-fluid mb-4" src="${president.image}" alt="${president.name}">
@@ -40,7 +40,7 @@ async function loadCommittee(sectionName) {
             const delay = (0.1 + index * 0.1).toFixed(1);
             const emailHTML = member.email ? `<br><small>Email: <a href="mailto:${member.email}">${member.email}</a></small>` : '';
             return `
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="${delay}s">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="${delay}s">
                     <div class="team-item d-flex h-100 p-4">
                         <div class="team-detail pe-4">
                             <img class="img-fluid mb-4" src="${member.image}" alt="${member.name}">
@@ -56,6 +56,9 @@ async function loadCommittee(sectionName) {
         if (others.length > 0) {
             container.insertAdjacentHTML('beforeend', `<div class="row">${gridHTML}</div>`);
         }
+
+        // 3️⃣ Re-initialize WOW.js for dynamically added content
+        new WOW().init();
 
     } catch (error) {
         console.error("Error loading committee:", error);

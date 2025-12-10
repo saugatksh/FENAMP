@@ -3,23 +3,84 @@
     --bs-tertiary: #797E88;
 }
 
-/* #team-grid .team-card {
-  transition: all 0.1s ease-in-out;
+/* Stylish Gallery Section */
+.gallery-section {
+    background: #f9f9f9;
 }
 
-#team-grid .team-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+/* Card Style */
+.gallery-card {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
 }
 
-#team-grid img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-} */
+.gallery-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Image Style */
+.gallery-image img {
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    transition: transform 0.5s ease;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Caption below image */
+.gallery-caption {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(135deg, #f0f4ff, #e0eaff);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: background 0.3s ease;
+}
+
+.gallery-caption h4 {
+    font-size: 18px;
+    color: #1a73e8;
+    margin: 0;
+    font-weight: 600;
+}
+
+.gallery-card:hover .gallery-caption {
+    background: linear-gradient(135deg, #dbe9ff, #c6ddff);
+}
+
+
+/* Popup Background */
+.image-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Large Image */
+.image-popup img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+/* Close cursor */
+.image-popup {
+    cursor: zoom-out;
+}
 
 .dept-line {
     width: 60%;
