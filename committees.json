@@ -88,5 +88,17 @@
         "photo": "img/srikumari-chaudhary.jpeg"
       }
     ]
+  },
+  {
+   "id": 4,
+    "name": "Banke Production & Market Protection Association",
+    "members": [
+      {
+        "name": "जीव नारायण बेलबासे",
+        "position": "अध्यक्ष",
+        "bio": "कृषक",
+        "photo": "img/jib-narayan-belbase.jpeg"
+      } 
+    ]
   }
 ]
