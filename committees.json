@@ -4,15 +4,15 @@
     "name": "Kathmandu Production & Market Protection Association",
     "members": [
       {
-        "name": "राम प्रसाद श्रेष्ठ",
-        "position": "अध्यक्ष",
-        "bio": "२० वर्षको अनुभव भएका सामाजिक अभियन्ता।",
+        "name": "Ram Prasad Shrestha",
+        "position": "President",
+        "bio": "Social activist with 20 years of experience.",
         "photo": "img/default-male.jpg"
       },
       {
-        "name": "सीता थापा",
-        "position": "सचिव",
-        "bio": "स्थानिय बजार विकासमा योगदान।",
+        "name": "Sita Thapa",
+        "position": "Secretary",
+        "bio": "Contributor to local market development.",
         "photo": "img/default-female.jpg"
       }
     ]
@@ -22,9 +22,9 @@
     "name": "Dang Production & Market Protection Association",
     "members": [
       {
-        "name": "गोपाल भण्डारी",
-        "position": "अध्यक्ष",
-        "bio": "कृषक",
+        "name": "Gopal Bhandari",
+        "position": "President",
+        "bio": "Farmer",
         "photo": "img/default-male.jpg"
       }
     ]
@@ -34,71 +34,71 @@
     "name": "National Production & Market Protection Association - Kailali District",
     "members": [
       {
-        "name": "गोरख बहादुर रावत",
-        "position": "अध्यक्ष",
-        "bio": "कृषक",
+        "name": "Gorakh Bahadur Rawat",
+        "position": "President",
+        "bio": "Farmer",
         "photo": "img/gorakha-bahadur-raut.jpeg"
       },
       {
-        "name": "सुनिलकुमार मिश्र",
-        "position": "उपाध्यक्ष",
-        "bio": "कृषक",
+        "name": "Sunil Kumar Mishra",
+        "position": "Vice President",
+        "bio": "Farmer",
         "photo": "img/sunil-kumar-mishra.jpeg"
       },
       {
-        "name": "तारा देबी शाह",
-        "position": "कोषाध्यक्ष",
-        "bio": "कृषक",
+        "name": "Tara Devi Shah",
+        "position": "Treasurer",
+        "bio": "Farmer",
         "photo": "img/tara-devi-shah.jpeg"
       },
       {
-        "name": "तारा चौधरी",
-        "position": "सचिब",
-        "bio": "कृषक",
+        "name": "Tara Chaudhary",
+        "position": "Secretary",
+        "bio": "Farmer",
         "photo": "img/tara-chaudhary.jpeg"
       },
       {
-        "name": "कालुराम चौधरी",
-        "position": "सदस्य",
-        "bio": "कृषक",
+        "name": "Kaluram Chaudhary",
+        "position": "Member",
+        "bio": "Farmer",
         "photo": "img/kaluram-chaudhary.jpeg"
       },
       {
-        "name": "जय बहादुर खड्का",
-        "position": "सदस्य",
-        "bio": "कृषक",
+        "name": "Jaya Bahadur Khadka",
+        "position": "Member",
+        "bio": "Farmer",
         "photo": "img/jaya-bahadur-khadka.jpeg"
       },
       {
-        "name": "डण्डीराज भट्ट",
-        "position": "सदस्य",
-        "bio": "कृषक",
+        "name": "Dandiraj Bhatta",
+        "position": "Member",
+        "bio": "Farmer",
         "photo": "img/dandiraj-bhatta.jpeg"
       },
       {
-        "name": "डल्ले रोकाया",
-        "position": "सदस्य",
-        "bio": "कृषक",
+        "name": "Dalle Rokkaya",
+        "position": "Member",
+        "bio": "Farmer",
         "photo": "img/dalle-rokkaya.jpeg"
       },
       {
-        "name": "श्रीकुमरी चौधरी",
-        "position": "सदस्य",
-        "bio": "कृषक",
+        "name": "Srikumari Chaudhary",
+        "position": "Member",
+        "bio": "Farmer",
         "photo": "img/srikumari-chaudhary.jpeg"
       }
     ]
   },
   {
-   "id": 4,
+    "id": 4,
     "name": "Banke Production & Market Protection Association",
     "members": [
       {
-        "name": "जीव नारायण बेलबासे",
-        "position": "अध्यक्ष",
-        "bio": "कृषक",
+        "name": "Jib Narayan Belbase",
+        "position": "President",
+        "bio": "Farmer",
         "photo": "img/jib-narayan-belbase.jpeg"
-      } 
+      }
     ]
   }
 ]
